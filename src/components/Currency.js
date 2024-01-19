@@ -14,12 +14,12 @@ const handleChange = (event) => {
     });
   }
 
-useEffect(() => {console.log(currency);}, [currency] )
+useEffect(() => {console.log(changeCurrency(currency));}, [currency] )
 
 return (
     <div className="alert alert-secondary">
     <select id="inputGroupSelect02" onChange={handleChange}>
-            <option defaultValue>Currency</option>
+            
             <option value="$" name="dollar">$ Dollar</option>
             <option value="£" name="pound">£ Pound</option>
             <option value="€" name="euro">€ Euro</option>
@@ -27,5 +27,5 @@ return (
               </select>
               </div>
 )};
-
+//<option defaultValue>Currency</option>
 export default Budget;
